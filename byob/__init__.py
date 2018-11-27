@@ -64,6 +64,10 @@ byob.core
     module containing functions which all generate code by using the arguments
     given to complete templates of varying size and complexity, and then output
     the code snippets generated as raw text
+   
+  byob.core.stagers
+    generate unique payload stagers to prevent analysis & detection
+    
 
 byob.modules
   add any scripts/modules you want to run on target machines to this directory.
@@ -121,11 +125,6 @@ byob.modules
     there anonymously) for the client stagers to load & execute on the target
     host machines
 
-  byob.modules.stagers
-    package containing payload stagers created by the client generator along
-    with the main payloads, which are hosted locally by the server (rather
-    than uploaded to Pastebin to be hosted there anonymously) for the client
-    droppers to load & execute on target host machines"""
 
 __all__ = ['client','core','modules','server']
 __version__ = '0.4'
